@@ -12,20 +12,15 @@
     <button type="button" name="button" >Envoyer</button>
   </form>
   <script>
-    $('#nom').focus(function(){
-    $('#nom').css('border', '1px solid green');
+  $(function(){
+    // * = tous :input = tout les inputs
+    $('*:input').focus(function(){
+    $(this).css('border', '1px solid green');
   });
-    $('#prenom').focus(function(){
-    $('#prenom').css('border', '1px solid green');
-  })
-    $('#nom').focusout(function(){
-    $('#nom').css('border', '1px solid red');
+    $('*:input').focusout(function(){
+    $(this).css('border', '1px solid red');
   });
-  $('#prenom').focusout(function(){
-  $('#prenom').css('border', '1px solid red');
   });
-
-
   </script>
 </body>
 </html>
